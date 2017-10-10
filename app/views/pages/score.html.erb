@@ -1,0 +1,12 @@
+<h1>Here's your score: </h1>
+
+
+<ul>
+  <li>Here's your score: <%= @result[:score] %></li>
+  <li>Here's the time: <%= @result[:time] %></li>
+  <<li><%= @result[:message] %></li>
+</ul>
+
+
+
+<%= link_to "Want to play again?", game_path %>

@@ -1,0 +1,14 @@
+<h1>Let's play a game. :)</h1>
+
+<p>First, I give you a random set of letters:</p>
+
+<p><%= @random_letters.join("") %></p>
+
+<form action = "/score" method = "get">
+  <label for="longest_word">Now, give me the longest word you can think of using these letters.</label>
+  <input type="text" id="guess" name="word">
+  <input type="hidden" name="grid" value=<%= @random_letters.join("") %>>
+  <input type="hidden" name="start_time" value=<%= @start_time %>>
+  <input type="submit" value="Answer!">
+</form>
+
